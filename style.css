@@ -55,7 +55,7 @@ body { font-family: 'Open Sans', sans-serif; background: var(--gray); color: var
 /* botão melhorado */
 .btn-scroll { 
   padding: 15px 40px; 
-  background: var(--primary); 
+  background: linear-gradient(135deg, #4da3ff, #002750);
   color: white; 
   text-decoration: none; 
   border-radius: 50px; 
