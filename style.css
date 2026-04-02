@@ -66,7 +66,7 @@ body { font-family: 'Open Sans', sans-serif; background: var(--gray); color: var
 }
 
 .btn-scroll:hover {
-  background: #e65c00;
+  background: #000000;
 }
 
 /* RESPONSIVO 🔥 */
@@ -88,8 +88,14 @@ body { font-family: 'Open Sans', sans-serif; background: var(--gray); color: var
 .frota-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
 .card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
 .card-img { height: 250px; }
-.scania-bg { background: #ccc url('https://s3.ecompletocarros.dev/images/lojas/165/veiculos/212075/veiculoInfoVeiculoImagesMobile/vehicle_image_1730134224_e6bd2d0ece7073daa1666a66d0f7ed21.jpeg') center/cover; }
-.meteor-bg { background: #003366 url('https://images.openai.com/static-rsc-4/SMO_MBjbtR2VcqHFmwSlOUWX0hAyaZD7DXXKneSoAny8oOh6KegmaSpGo8ZcLYXOlwPL0FD8twzzadn2LF5POXSoqpc1gCoCa3Ufg6pZuzU-1x0zEAhBHfxF_CE4GIOSRsnsso-_l_doN-WyH62XN-Iirn4nNJTceEbwaQSh4a-XBZDqqOgA_ng3axS7v4hS?purpose=fullsize') center/cover; }
+
+.meteor-bg { 
+  background: #003366 url('/meteor.png') center/cover no-repeat; 
+}
+
+.scania-bg { 
+  background: #ccc url('/440.png') center/cover no-repeat; 
+}
 .card-info { padding: 25px; }
 .divider { height: 3px; width: 40px; background: var(--primary); margin: 15px 0; }
 .tag { background: var(--primary); color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.7rem; float: right; margin: 15px; }
