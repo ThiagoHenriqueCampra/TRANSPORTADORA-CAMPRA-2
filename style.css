@@ -90,11 +90,11 @@ body { font-family: 'Open Sans', sans-serif; background: var(--gray); color: var
 .card-img { height: 250px; }
 
 .meteor-bg { 
-  background: #003366 url('/meteor.png') center/cover no-repeat; 
+  background: #003366 url('/meteor.PNG') center/cover no-repeat; 
 }
 
 .scania-bg { 
-  background: #ccc url('/440.png') center/cover no-repeat; 
+  background: #ccc url('/440.PNG') center/cover no-repeat; 
 }
 .card-info { padding: 25px; }
 .divider { height: 3px; width: 40px; background: var(--primary); margin: 15px 0; }
