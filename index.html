@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMPRA | Transportadora de Elite</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Tr. CAMPRA<span>.</span></div>
+        <div class="contato-topo">+55 46 9973-3300</div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="reveal">LOGÍSTICA EM <br><span>MOVIMENTO</span></h1>
+            <p>Transporte frigorificado de alta performance com a confiança que você precisa.</p>
+            <p>Também realizamos o transporte de frutas com agilidade, cuidado e controle de qualidade</p>
+            <p>garantindo que sua carga chegue sempre fresca e em perfeitas condições.</p>
+            <a href="#contato" class="btn-scroll">Solicitar Frete</a>
+        </div>
+    </section>
+
+    <main class="container">
+        <h2 class="section-title">Nossa Frota</h2>
+        <p class="section-subtitle">Equipamentos modernos e manutenção rigorosa</p>
+        
+        <div class="frota-grid">
+            <div class="card reveal">
+                <div class="card-img scania-bg"><span class="tag">Disponível</span></div>
+                <div class="card-info">
+                    <h3>Scania 440 R</h3>
+                    <p>Cor: <strong>Branco</strong></p>
+                    <p>Equipamento: <strong>Câmara Fria Branca</strong></p>
+                    <div class="divider"></div>
+                    <p class="desc">Tecnologia Scania para máxima eficiência em cargas resfriadas.</p>
+                </div>
+            </div>
+
+            <div class="card reveal">
+                <div class="card-img meteor-bg"><span class="tag">Premium</span></div>
+                <div class="card-info">
+                    <h3>Meteor 480 Highline</h3>
+                    <p>Cor: <strong>Azul</strong></p>
+                    <p>Equipamento: <strong>Câmara Fria Azul</strong></p>
+                    <div class="divider"></div>
+                    <p class="desc">Potência Volkswagen para prazos rigorosos e grandes volumes.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section id="contato" class="contato-section">
+        <div class="contato-card">
+            <h2>Pronto para carregar?</h2>
+            <p>Fale direto com nosso operacional via WhatsApp.</p>
+            <a href="https://wa.me/554699733300" target="_blank" class="whatsapp-btn">ENVIAR MENSAGEM AGORA</a>
+            <p class="tel-footer">(46) 9973-3300</p>
+            <p class="tel-footer">Sede: Bela Vista da Caroba PR</p>
+        </div>
+    </section>
+
+    <button id="openAdmin" class="admin-trigger">⚙️</button>
+
+    <div id="adminModal" class="modal-admin">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            
+            <div id="loginArea">
+                <h3>Painel Administrativo CAMPRA</h3>
+                <p>Digite a senha para gerenciar a operação:</p>
+                <input type="password" id="adminPass" placeholder="Senha">
+                <button onclick="checkPass()" class="btn-login">Acessar Painel</button>
+            </div>
+            
+            <div id="excelArea" style="display: none;">
+                <div class="admin-header">
+                    <h3>Controle de Viagens e Fretes</h3>
+                    <button onclick="saveData()" class="btn-save">Salvar Alterações</button>
+                </div>
+                <div class="table-wrapper">
+                    <table id="excelTable">
+                        <thead>
+                            <tr>
+                                <th>Data</th>
+                                <th>Caminhão</th>
+                                <th>Origem (Saída)</th>
+                                <th>Destino (Chegada)</th>
+                                <th>KM</th>
+                                <th>Valor (R$)</th>
+                                <th>Status</th>
+                                <th>Ação</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody"></tbody>
+                    </table>
+                </div>
+                <button onclick="addRow()" class="btn-add">+ Nova Viagem</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 CAMPRA TRANSPORTES | Excelência no Trecho</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
