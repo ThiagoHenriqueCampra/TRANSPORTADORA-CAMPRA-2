@@ -83,7 +83,7 @@ body { font-family: 'Open Sans', sans-serif; background: var(--gray); color: var
 
 /* Frota */
 .container { padding: 60px 5%; max-width: 1200px; margin: auto; }
-.section-title { text-align: center; font-size: 2.2rem; margin-bottom: 10px; }
+.section-title { text-align: center; font-size: 2.2rem; margin-bottom: 10px;color: var(--primary); }
 .section-subtitle { text-align: center; color: #ffffff; margin-bottom: 40px; }
 .frota-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
 .card { background: var(--primary); border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
@@ -96,12 +96,12 @@ body { font-family: 'Open Sans', sans-serif; background: var(--gray); color: var
 .scania-bg { 
   background: #ccc url('/440.PNG') center/cover no-repeat; 
 }
-.card-info { padding: 25px; }
-.divider { height: 3px; width: 40px; background: var(--primary); margin: 15px 0; }
+.card-info { padding: 25px; color: white; }
+.divider { height: 3px; width: 40px; background: #002750; margin: 15px 0; }
 .tag { background: var(--primary); color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.7rem; float: right; margin: 15px; }
 
 /* Contato */
-.contato-section { padding: 80px 5%; background: var(--dark); display: flex; justify-content: center; }
+.contato-section { padding: 80px 5%; background: #0f0f0f; display: flex; justify-content: center; }
 .contato-card { background: rgba(255,255,255,0.05); padding: 50px; border-radius: 20px; text-align: center; color: white; border: 1px solid rgba(255,255,255,0.1); width: 100%; max-width: 600px; }
 .whatsapp-btn { display: block; background: var(--accent); color: white; padding: 18px; border-radius: 10px; text-decoration: none; font-weight: 800; margin: 25px 0; }
 
